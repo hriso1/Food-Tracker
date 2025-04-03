@@ -39,6 +39,10 @@
 /* Pentru Navbar */
 /* Pentru Navbar */
 
+.navbar{
+  height: 100vh;
+}
+
 .menu-icon {
   position: fixed;
   left: 0px;
@@ -67,6 +71,8 @@
   transition: all 0.3s ease-in-out;
   z-index: 10;
   /* display: flex; */
+  height: 100vh;
+
 
 }
 
