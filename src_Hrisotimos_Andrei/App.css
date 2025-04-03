@@ -1,0 +1,549 @@
+/* Pentru mainlayout */
+/* Pentru mainlayout */
+/* Pentru mainlayout */
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+/* Content pagina calculator */
+/* .content {
+  margin-left: 250px;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* .sidebar--open+.content {
+  margin-left: 0;
+} */
+
+.main-content {
+  margin-left: 0px;
+  /* adjust this value to match the width of your sidebar */
+  transition: margin-left 0.3s ease-in-out;
+  /* add a transition effect for a smooth animation */
+}
+
+.sidebar--open+.main-content {
+  margin-left: 150px;
+  /* reset the margin when the sidebar is open */
+}
+
+/* Pentru iconita sa fie vizibila */
+/* Pentru iconita sa fie vizibila */
+/* Pentru Navbar */
+/* Pentru Navbar */
+
+.menu-icon {
+  position: fixed;
+  left: 0px;
+  color: rgb(35, 228, 235);
+  padding: 2px 6px;
+  transition: all .5s;
+  top: 0;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.menu-icon--open {
+  color: rgb(36, 207, 222);
+  right: 250px;
+}
+
+.sidebar {
+  position: fixed;
+  background: rgb(3, 6, 52);
+  top: 0;
+  left: -150px;
+  width: 150px;
+  height: 100%;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  /* display: flex; */
+
+}
+
+.sidebar ul a {
+  margin-right: 10px;
+
+}
+
+.sidebar--open {
+  left: 0;
+  transform: translateX(0);
+}
+
+.sidebar--closed {
+  transform: translateX(-250px);
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 150px;
+  line-height: 60px;
+  font-size: 16px;
+  padding-left: 14px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  padding-top: 25px;
+
+}
+
+.linie a {
+  color: white;
+}
+
+.linie:hover {
+  border-right: 5px solid rgb(20, 238, 245);
+  transition: 0.4s;
+}
+
+.linie:hover a {
+  padding-left: 10px;
+  color: rgb(20, 238, 245);
+  transition: 0.4s;
+
+}
+
+.andrei {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Toolbar */
+/* Toolbar */
+/* Toolbar */
+.tool-bar {
+  background-color: rgb(3, 6, 52);
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  /* padding: 1px; */
+  padding-left: 550px;
+
+}
+
+.logo {
+  width: 110px;
+  height: 60px;
+}
+
+/* .title {
+
+  font-size: 30px;
+  color: white;
+  padding-left: 540px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+.Andrei {
+
+  display: grid;
+  place-items: center;
+}
+
+
+
+/* Pentru pagina de calculator */
+/* Pentru pagina de calculator */
+
+body {
+
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+}
+
+div#bmrcalc {
+  margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  position: absolute; */
+  padding-left: 10px;
+  margin-left: 300px;
+}
+
+
+.form {
+  margin-top: 30px;
+  width: 600px;
+  background: white;
+  padding: 20px;
+  border: 1px solid #5af9fc;
+  box-shadow: 0 1px 9px #3ae9ef;
+  border-radius: 10px;
+  max-width: 100%;
+  margin-left: 300px;
+}
+
+.titlu-calculator {
+  margin: 0px;
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.inputwrap {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.inputwrap label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.weight,
+.height,
+.age {
+  padding: 4px 4px;
+  width: 110px;
+  margin-right: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+
+}
+
+.weight,
+.height,
+.age {
+  width: 20%;
+}
+
+.btn-cal {
+  display: block;
+  width: 100%;
+  padding: 8px 1px;
+  background: black;
+  color: white;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.activity {
+  padding: 6px 6px;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.error {
+  background: #d81717;
+  color: white;
+  text-align: center;
+  padding: 4px 16px;
+  margin-bottom: 15px;
+  display: inline-block;
+
+}
+
+.result {
+  background-color: rgb(64, 200, 191);
+  color: white;
+  text-align: center;
+  padding: 6px 0px;
+  font-size: 16px;
+  width: 300px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+  margin-top: 6px;
+}
+
+/* .workout {
+  margin-top: 19px;
+} */
+
+
+
+/* Text calculator */
+/* Text calculator */
+/* Text calculator */
+
+
+.text {
+  font-size: 20px;
+  margin-top: 40px;
+  text-indent: 50px;
+  margin-left: 20px;
+}
+
+.card-calc {
+  background-color: #a8efeb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 1000px;
+}
+
+.card-calc ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card-calc li {
+  margin-bottom: 10px;
+}
+
+/* Pentru pagina de workout  */
+/* Pentru pagina de workout  */
+/* Pentru pagina de workout  */
+/* Pentru pagina de workout  */
+/* Pentru pagina de workout  */
+
+
+
+.titlu-wk {
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: barlow semi condensed;
+  text-transform: uppercase;
+}
+
+.lista1-wk {
+  background-color: #a8efeb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: 400px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.lista1-wk ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: barlow semi condensed;
+}
+
+.lista1-wk li {
+  margin-bottom: 10px;
+  text-indent: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content-wk1 h2 {
+  margin-top: 80px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  font-family: barlow semi condensed;
+  text-transform: uppercase;
+
+}
+
+.content-wk1 p {
+  margin-left: 40px;
+  font-size: 20px;
+  font-family: barlow semi condensed, sans-serif;
+  text-indent: 40px;
+
+}
+
+
+.content-wk2 h2 {
+  margin-top: 80px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  font-family: barlow semi condensed;
+  text-transform: uppercase;
+
+}
+
+.content-wk2 p {
+  margin-left: 40px;
+  font-size: 20px;
+  font-family: barlow semi condensed, sans-serif;
+  text-indent: 40px;
+
+}
+
+.content-wk2 h3 {
+  padding-top: 10px;
+  margin-left: 40px;
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.content-wk2 li {
+  display: flex;
+  margin-left: 40px;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.lista2-wk {
+  background-color: #a8efeb;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 400px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+
+.video {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 350px;
+  height: 0;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 350px;
+  margin-bottom: 100px;
+}
+
+
+/* Tracker */
+/* Tracker */
+/* Tracker */
+/* Tracker */
+
+.input-mancare {
+  width: 100px;
+  padding: 4px;
+  font-size: 16px;
+  border: 1.3px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: none;
+  transition: border-color 0.3s ease-in-out;
+  margin-right: 5px;
+  margin-left: 3px;
+}
+
+.label-tracker {
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.input-altele {
+  width: 70px;
+  padding: 4px;
+  font-size: 16px;
+  border: 1.3px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: none;
+  transition: border-color 0.2s ease-in-out;
+  margin-right: 5px;
+  margin-left: 3px;
+}
+
+.input-mancare:focus,
+.input-altele:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn-tracker1 {
+  display: flex;
+  background-color: #24a23e;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: -40px;
+  align-items: center;
+  justify-content: center;
+  cursor: cell;
+  border: none;
+  padding: 2px 3px 2px 3px;
+}
+
+.btn-tracker2 {
+  display: flex;
+  background-color: #ac230e;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 2px 3px 2px 3px;
+  margin-left: 600px;
+
+}
+
+.btn-tracker1:hover {
+  color: #08f830;
+}
+
+.btn-tracker2:hover {
+  color: #fc0000;
+}
+
+.titlu-tracker {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+.macro1 {
+  display: inline-flex;
+  /* justify-content: center; */
+  padding-left: 500px;
+  margin: 5px;
+}
+
+.macro2 {
+  display: inline-flex;
+  /* justify-content: center; */
+  padding-left: 500px;
+  margin: 5px;
+}
+
+.macro3 {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.macro4 {
+  padding-left: 560px;
+  font-size: 20px;
+}
+
+.macro {
+  display: inline-block;
+}
+
+/* Pentru inputuri */
+/* Pentru inputuri */
+/* Pentru inputuri */
